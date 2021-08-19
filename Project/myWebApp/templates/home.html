@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My home </title>
+</head>
+<body>
+	<h1>This is my page</h1>
+
+	<form action="imageuploadimageprocess" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{form.as_p}}
+
+		<input id="image" type="file" name="image"/>
+		<input type="submit" name="Submit">
+	</form>	
+
+</body>
+</html>
